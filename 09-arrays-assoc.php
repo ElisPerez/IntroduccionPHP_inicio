@@ -1,13 +1,14 @@
 <?php include 'includes/header.php';
 
 /* ----- Como los objetos en JS ----- */
+echo "<h1>Arrays asociativos</h1>";
 $cliente = [
     'nombre' => 'Antonio',
     'saldo' => 200,
     'informacion' => [
         'tipo' => 'premium',
         'disponible' => 100
-    ],
+    ]
 ];
 
 echo '<pre>';
