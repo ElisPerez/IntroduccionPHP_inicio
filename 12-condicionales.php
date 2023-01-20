@@ -1,5 +1,12 @@
 <?php include 'includes/header.php';
 
+/* --------------- IF --------------- */
+echo "<h1>IF</h>";
+$color = "blue";
+if ($color === 'blue'):
+  echo "<h2>The color is {$color}</h2>";
+endif;
+
 /* --------------- OR --------------- */
 echo "<h1>OR</h1>";
 $autenticado = true;
@@ -44,13 +51,14 @@ if (!empty($cliente)) {
 /* ------------- else if ------------ */
 echo "<h1>else if</h1>";
 
-if ($cliente['saldo'] > 0) {
+// sintaxis de dos puntos ":" y "endif"
+if ($cliente['saldo'] > 0):
   echo "<h2>Saldo disponible {$cliente['saldo']}</h2>";
-} elseif ($cliente['informacion']['tipo'] === 'Premium') {
+elseif ($cliente['informacion']['tipo'] === 'Premium'):
   echo "<h2>El cliente es Premium</h2>";
-} else {
+else:
   echo "<h2>El cliente no tiene saldo y no es Premium</h2>";
-}
+endif;
 
 /* ------------- Switch ------------ */
 echo "<h1>Switch</h1>";
