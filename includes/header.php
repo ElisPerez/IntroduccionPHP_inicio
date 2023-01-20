@@ -12,9 +12,6 @@
 
 
     <div class="contenido">
-        <h1>Desarrollo Web Completo</h1>
-        <a href="http://www.codigoconjuan.com" target="_blank">codigoconjuan.com</a>
         <p>Introducción a PHP</p>
-        <p class="hashtag">#DesarrolloWebCompleto</p>
 
         <div class="resultado">
